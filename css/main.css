@@ -60,12 +60,15 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.section--doing-padding {
-  padding-top: 0px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section--team-background {
@@ -73,20 +76,33 @@ p {
 }
 
 .section__title {
-  margin-bottom: 50px;
-  text-align: center;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 .logo {
@@ -484,22 +500,25 @@ p {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
-.benefits {
-  display: flex;
-  margin-left: -30px;
-}
-
-.benefits__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+@media screen and (max-width: 480px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .benefits__title {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+
+@media screen and (max-width: 480px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__container {
@@ -548,39 +567,42 @@ p {
   color: var(--basic-white-color);
 }
 
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 16px;
-  line-height: 1.18;
-}
-
 .team__item {
-  margin-right: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 4);
+  width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
 
-.team__item:nth-child(4n) {
-  margin-right: 0px;
+@media screen and (max-width: 480px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team__conteiner {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 15px 24px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__conteiner {
+    padding-bottom: 30px;
+  }
 }
 
 .team__title {
   margin-bottom: 10px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.18;
   color: var(--title-text-color);
 }
 
 .team__text {
   margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 .clients {
@@ -825,5 +847,9 @@ p {
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
+}
+
+.display-none {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
