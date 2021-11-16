@@ -1,23 +1,24 @@
 .logo {
-    margin-right: 93px;
+  margin-right: 93px;
 
-    color: var(--accent-color);
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .logo__accent-header {
-    color: #000000;
+  color: #000000;
 }
 
 .footer__logo {
-    display: inline-block;
-    margin-right: 0;
-    margin-bottom: 20px;
+  // display: inline-block;
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .logo__accent-footer {
-    color: var(--basic-white-color);
+  color: var(--basic-white-color);
 }
