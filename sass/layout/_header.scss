@@ -1,16 +1,29 @@
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
 
-  .header__container {
-    display: flex;
-    align-items: center;
-  }
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 // nav
 
 .nav {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .nav__item + .nav__item {
@@ -55,8 +68,14 @@
 }
 
 .header-contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // margin-left: auto;
+  }
 }
 
 .header-contacts__item + .header-contacts__item {
