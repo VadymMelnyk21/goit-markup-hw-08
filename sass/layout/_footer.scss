@@ -26,7 +26,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // justify-content: flex-start;
     margin-bottom: 0;
   }
 }
@@ -93,10 +92,6 @@
   text-transform: uppercase;
   color: var(--basic-white-color);
 }
-
-// .footer__subscription {
-//   // margin-left: auto;
-// }
 
 .footer-form {
   @media screen and (max-width: 1199px) {

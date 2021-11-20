@@ -12,8 +12,8 @@
   padding-top: 0px;
 }
 
-@media screen and (max-width: 1199px) {
-  .section--doing-none {
+.section--doing-none {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -31,10 +31,10 @@
   letter-spacing: 0.03em;
   text-align: center;
 
+  color: var(--title-text-color);
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     font-size: 36px;
   }
-
-  color: var(--title-text-color);
 }
