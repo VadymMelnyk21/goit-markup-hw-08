@@ -31,10 +31,6 @@
 }
 
 .nav {
-  // @media screen and (max-width: 767px) {
-  //   display: none;
-  // }
-
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
@@ -107,9 +103,6 @@
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
-
-  // padding-top: 32px;
-  // padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 12px;
