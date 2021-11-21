@@ -1,20 +1,5 @@
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-
-  width: 94vw;
-
   padding: 40px;
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-  }
 
   background-color: #fff;
 
@@ -22,11 +7,24 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
 
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.8);
+    width: 450px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }
 
